@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start Custom CSS Below */
+
+body {
+    background: #707681;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #a0a7ad;
+    margin-bottom: 5%;
+}
+a, a:visited {
+    color: #a0a7ad;
+    text-decoration: none;
+}
+header {
+    /* background: #4a5569; */
+    padding:2%;
+    padding-bottom: 0%;
+    /* background: linear-gradient(to bottom right, #4a5569, #707681); */
+    background: linear-gradient(to bottom, to top, #343b47, #707681);
+}
+.title-bar tr {
+    /* float: left; */
+    text-align: right;
+    padding-top:2%;
+    padding-left:5%;
+}
+#name-title {
+    font-size: 300%;
+    font-weight: 350;
+    text-align: left;
+    color: #e2e8ee;
+}
+#title-foot {
+    font-size: 125%;
+    font-weight: 200;
+    padding-left: 5%;  
+    color: #a0a7ad;
+}
+.navigation {
+    text-align: center;
+    font-size: 100%;
+    font-weight: 250;
+    color: #a0a7ad;
+}
+.navigation li {
+    padding-left: 3%;
+    display: inline-block;
+    line-height:50px;
+
+}
+.navigation ul {
+    height: 50px;
+    background: #4b6b8a;
+
+}
+.navigation a:hover, a:focus{
+    text-shadow:0px 0px 3px;
+    color:whitesmoke;
+    transition: all 0.3s ease-in-out;
+
+}
+.main-text {
+    font-weight: 300;
+    font-kerning: auto;
+    padding-top: 25px;
+    text-align: center;
+    line-height: 125%;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 25px;
+}
+main {
+    margin-right:20%;
+    margin-left:20%;
+    background: #343b47;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4b6b8a;
+    border-top-style: none;
+}
+#greeting {
+    padding-top:25px;
+    font-size: 135%;
+    text-align: center;
+}
+.image-table {
+    /* border: 1px solid black; */
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+}
+.image-table tr {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+.image-table img {
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    max-width: 20vw;
+    width: auto;
+    vertical-align: -webkit-baseline-middle;
+}
+.image-table tr :first-child {
+    /* float:left; */
+    padding-right: 5%;
+}
+.image-table tr :last-child {
+    /* float:right; */
+    padding-left: 5%;
+}
+.image-table td:only-child > img {
+    margin-top: 15%;
+    /* background-color: red; */
+    margin-left: 50%;
+    margin-right: 50%;
+}
