@@ -1,0 +1,21 @@
+footer .column {
+    /* align-content: center; */
+    justify-content: center;
+    /* flex-wrap: nowrap; */
+}
+.social-container {
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.social-links {
+    justify-content: center;
+}
+footer h1 {
+    font-weight: bold;
+    font-size: 10pt;
+    margin-bottom: 10%;
+}
+.social-links i {
+    margin-right: 5%;
+    margin-left: 5%;
+}

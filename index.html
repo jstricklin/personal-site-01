@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles/bulma.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/minty/bulmaswatch.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
 </head>
 <body>
-    <section class="hero is-primary is-medium">
+    <section class="hero is-info">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
@@ -51,7 +52,7 @@
                 <div class="column is-8 is-offset-2">
                     <div class="columns">
                         <div class="column has-text-centered">
-                            <div class="header ">
+                            <div class="header">
                                 <h5 class="title">
                                     Who I am. What I do.
                                 </h5>
@@ -59,7 +60,7 @@
                         </div>
                     </div>
                     <div class="columns">
-                        <div class="column">
+                        <div class="column box">
                             <div class="body">
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, perferendis iure. Cum at eum sunt qui odio itaque eaque aperiam, aliquid reprehenderit mollitia, asperiores non totam suscipit voluptatem, quidem quis?</p>
                                 <p>Aut in praesentium consectetur eveniet error rem nemo quidem voluptas, numquam, aspernatur aliquid veritatis natus dolore quaerat maxime totam ipsam laboriosam neque tempore deleniti velit ex unde, optio ad! Numquam?</p>
@@ -74,13 +75,20 @@
     </section>
     <footer class="footer">
         <div class="container">
-            <h2>
-                Follow me:
-            </h2>
-            <i class="fab fa-github-square fa-4x"></i>
-            <i class="fab fa-twitter-square fa-4x"></i>
-            <i class="fab fa-linkedin fa-4x"></i>
-
+            <div class="columns">
+                <div class="column is-flex is-italic">
+                    <div class="social-container is-flex box">
+                        <h1>
+                            Follow me
+                        </h1>
+                        <div class="social-links is-flex">
+                            <i class="fab fa-github-square fa-2x"></i>
+                            <i class="fab fa-twitter-square fa-2x"></i>
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
