@@ -3,37 +3,85 @@
 <head>
     <meta charset="utf-8" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/bulma.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
 </head>
 <body>
-    <header>
-        <table class="title-bar">
-            <tr>
-                <td>
-                    <a href="index.html"><h1 id="name-title">Jose Stricklin</h1>
-                    <h3 id="title-foot">Creative Developer</h3>
-                    </a>
-                </td>
-            </tr>
-        </table>    
-    </header>
-    <nav class="navigation">
-        <ul>
-            <li><a href="pages/about.html">About Me</a></li>
-            <li><a href="pages/arts.html">Digital and Traditional Arts</a></li>
-            <li><a href="pages/anim3D.html">Animation and 3D</a></li>
-            <li><a href="pages/dev.html">Developement</a></li>
-            <li><a href="pages/blog.html">Blog</a></li>
-            <li><a>Contact Me</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2 id="greeting">Hey there!</h2>
-        <div class="main-text">My name is Jose Stricklin and this
-            is my online personal website.<br><br> 
-
-            This is a place to host projects, artwork, concepts and ideas I've worked on or am currently building. 
+    <section class="hero is-primary is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Hello, my name is Jose
+                </h1>
+                <h2>
+                    and I make stuff
+                </h2>
+            </div>
         </div>
-    </main>
+        <div class="hero-foot">
+            <nav class="tabs is-boxed">
+                <div class="container">
+                    <ul>
+                        <li class="is-active">
+                            <a>About me</a>
+                        </li>
+                        <li>
+                            <a>WebDev</a>
+                        </li>
+                        <li>
+                            <a>GameDev</a>
+                        </li>
+                        <li>
+                            <a>Contact</a>
+                        </li>
+                        <li>
+                            <a>Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="section content">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <div class="columns">
+                        <div class="column has-text-centered">
+                            <div class="header ">
+                                <h5 class="title">
+                                    Who I am. What I do.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="body">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, perferendis iure. Cum at eum sunt qui odio itaque eaque aperiam, aliquid reprehenderit mollitia, asperiores non totam suscipit voluptatem, quidem quis?</p>
+                                <p>Aut in praesentium consectetur eveniet error rem nemo quidem voluptas, numquam, aspernatur aliquid veritatis natus dolore quaerat maxime totam ipsam laboriosam neque tempore deleniti velit ex unde, optio ad! Numquam?</p>
+                                <p>Eum voluptate mollitia sed quasi repellendus ratione tempora illum atque recusandae maxime perferendis id aperiam error quae ex laborum doloremque quibusdam, labore nisi vero veritatis iure incidunt culpa. Numquam, maiores!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <h2>
+                Follow me:
+            </h2>
+            <i class="fab fa-github-square fa-4x"></i>
+            <i class="fab fa-twitter-square fa-4x"></i>
+            <i class="fab fa-linkedin fa-4x"></i>
+
+        </div>
+    </footer>
 </body>
 </html>
