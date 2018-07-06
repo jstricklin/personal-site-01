@@ -6,12 +6,12 @@
 .hero.is-fullheight {
         min-height: 50vh;
 }
+
 .hero-foot .nav{
     visibility: hidden;
     display:flex;
     justify-content: center;
 }
-
 .hero li:hover {
     font-weight: bold;
     border-left: 1px solid white;
@@ -19,6 +19,9 @@
     border-top: 1px solid white;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+}
+.mobile-nav {
+    font-size: 10pt;
 }
 .main-header {
     flex-direction: column;
@@ -29,7 +32,6 @@
     /* color: white; */
     mix-blend-mode: multiply;
 }
-
 footer .column {
     justify-content: center;
 }
@@ -62,7 +64,6 @@ footer h1 {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    /* border: 10px solid rgb(100, 185, 200); */
 }
 .circle {
     display: flex;
@@ -106,7 +107,7 @@ body {
 
 }
 
-@media only screen and (min-width: 812px) {
+@media only screen and (min-width: 480px) {
     .hero.is-fullheight {
         min-height:100vh;
     }
