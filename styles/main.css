@@ -2,6 +2,7 @@
     background-image: url("../imgs/djimm-concept-01.PNG");
     background-size: cover;
     background-attachment: fixed;
+    /* background: fixed center; */
 }
 .hero.is-fullheight {
         min-height: 50vh;
