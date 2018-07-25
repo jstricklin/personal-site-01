@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../styles/bulma.css">
     <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/minty/bulmaswatch.min.css">
     <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/calc.css">
 </head>
 
 <body>
@@ -87,27 +88,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="columns">
-                        <div class="column body box">
-<div class="calc-container">
-    <a href="browser-calc.html">Browser Calculator</a>
-</div>
-                            <div>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, perferendis iure. Cum at
-                                    eum sunt qui odio itaque eaque aperiam, aliquid reprehenderit mollitia, asperiores non
-                                    totam suscipit voluptatem, quidem quis?</p>
-                                <p>Aut in praesentium consectetur eveniet error rem nemo quidem voluptas, numquam, aspernatur
-                                    aliquid veritatis natus dolore quaerat maxime totam ipsam laboriosam neque tempore deleniti
-                                    velit ex unde, optio ad! Numquam?</p>
-                                <p>Eum voluptate mollitia sed quasi repellendus ratione tempora illum atque recusandae maxime
-                                    perferendis id aperiam error quae ex laborum doloremque quibusdam, labore nisi vero veritatis
-                                    iure incidunt culpa. Numquam, maiores!</p>
+                    <div id="calculator">
+                        <div id="screen-container">
+                            <div id="screen"></div>
+                        </div>
+
+                        <div id="buttons-container">
+                            <div class="buttons">
+                                <span class="operator" id="clear">C</span>
+                                <span class="operator">÷</span>
+                                <span class="operator">x</span>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span class="operator">-</span>
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span class="operator">+</span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="operator" id="equals">=</span>
+                                <div class="l-row">
+                                    <span id="zero">0</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
     </section>
     <footer class="footer">
@@ -128,6 +138,7 @@
             </div>
         </div>
     </footer>
+    <script src="../scripts/calc.js"></script>
 </body>
 
 </html>
