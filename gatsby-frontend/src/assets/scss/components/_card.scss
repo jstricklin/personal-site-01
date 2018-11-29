@@ -5,7 +5,8 @@
     .cardBody {
         display: flex;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
+        img{ margin-top: 1em; }
         margin: 2em 1em;
         .card-text {
             margin-left: 2em;
