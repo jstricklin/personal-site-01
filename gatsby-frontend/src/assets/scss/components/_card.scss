@@ -1,0 +1,22 @@
+
+.card {
+    border-top: 1px solid white;
+    padding: 2em 1em;
+    .cardBody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 1em;
+        .card-text {
+            margin-left: 2em;
+        }
+    }
+    .wide {
+        display: flex;
+        flex-direction: column;
+        .card-text {
+            margin-top: 2em;
+        }    
+    }
+    
+}
