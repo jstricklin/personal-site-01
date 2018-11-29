@@ -6,7 +6,6 @@ import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 import menuScreen from '../images/menu-drawer-screen.png'
 import movieScreen from '../images/movie-buddy-screen.png'
-import resume from '../images/jose-stricklin-resume-11-18.pdf'
 
 class Main extends React.Component {
     render() {
@@ -61,7 +60,7 @@ class Main extends React.Component {
 
                 <article id="resume" className={`${this.props.article === 'resume' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
                     <h2 className="major">Resume</h2>
-                    <embed src={resume} width='550px' height='725px'/>
+                    <embed src="https://drive.google.com/file/d/1cwJPjGZmoVe0c5Qu2137rDRzJztr8RtJ/preview" max-width='550px' max-height='725px'/>
                     {close}
                 </article>
 
