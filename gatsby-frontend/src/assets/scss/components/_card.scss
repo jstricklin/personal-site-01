@@ -1,7 +1,10 @@
 
 .card {
-    border-top: 1px solid white;
+    // border-bottom: 1px solid white;
     padding: 2em 1em;
+    h3 {
+        text-align:center;
+    }
     .cardBody {
         display: flex;
         justify-content: center;
