@@ -8,6 +8,30 @@ import menuScreen from '../images/menu-drawer-screen.png'
 import movieScreen from '../images/movie-buddy-screen.png'
 
 class Main extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            name: '',
+            email: '',
+            message: '',
+        }
+        this.onNameChange = this.onNameChange.bind(this)
+        this.onEmailChange = this.onEmailChange.bind(this)
+        this.onMessageChange = this.onMessageChange.bind(this)
+        this.sendMessage = this.sendMessage.bind(this)
+    }
+    onNameChange(e){
+        this.setState({ name: e.target.value })
+    }
+    onEmailChange(e){
+        this.setState({ email: e.target.value })
+    }
+    onMessageChange(e){
+        this.setState({ message: e.target.value })
+    }
+    sendMessage(e) {
+        console.log('sending.', this.state.name, this.state.email, this.state.message)
+    }
     render() {
 
         let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
@@ -66,18 +90,18 @@ class Main extends React.Component {
 
                 <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
                     <h2 className="major">Contact</h2>
-                    <form method="post" action="#">
+                    <form method="post" onSubmit={this.sendMessage}>
                         <div className="field half first">
                             <label htmlFor="name">Name</label>
-                            <input type="text" name="name" id="name" />
+                            <input onChange={this.onNameChange} required type="text" name="name" id="name" />
                         </div>
                         <div className="field half">
                             <label htmlFor="email">Email</label>
-                            <input type="text" name="email" id="email" />
+                            <input onChange={this.onEmailChange} type="text" required type="email" name="email" id="email" />
                         </div>
                         <div className="field">
                             <label htmlFor="message">Message</label>
-                            <textarea name="message" id="message" rows="4"></textarea>
+                            <textarea onChange={this.onMessageChange} required name="message" id="message" rows="4"></textarea>
                         </div>
                         <ul className="actions">
                             <li><input type="submit" value="Send Message" className="special" /></li>
