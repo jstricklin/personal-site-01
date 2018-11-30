@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "Jose Stricklin's Portfolio Website",
+  "description": "Personal Website and Portfolio: Jose Stricklin",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Jose Stricklin",
   "dependencies": {
     "gatsby": "^2.0.0",
     "gatsby-plugin-manifest": "^2.0.2",
