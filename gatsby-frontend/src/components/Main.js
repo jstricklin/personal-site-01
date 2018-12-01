@@ -99,7 +99,7 @@ class Main extends React.Component {
 
                 <article id="resume" className={`${this.props.article === 'resume' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
                     <h2 className="major">Resume</h2>
-                    <embed src="https://drive.google.com/file/d/1cwJPjGZmoVe0c5Qu2137rDRzJztr8RtJ/preview" width='550px' height='725px'/>
+                    <embed src="https://drive.google.com/file/d/1cwJPjGZmoVe0c5Qu2137rDRzJztr8RtJ/preview" width='100%' height='700px' />
                     {close}
                 </article>
 
