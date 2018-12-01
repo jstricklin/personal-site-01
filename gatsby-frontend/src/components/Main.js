@@ -7,6 +7,8 @@ import pic03 from '../images/pic03.jpg'
 import menuScreen from '../images/menu-drawer-screen.png'
 import movieScreen from '../images/movie-buddy-screen.png'
 
+const baseURL = 'https://personal-site-mailer.herokuapp.com/contact'
+
 class Main extends React.Component {
     constructor(props){
         super(props)
@@ -30,7 +32,20 @@ class Main extends React.Component {
         this.setState({ message: e.target.value })
     }
     sendMessage(e) {
-        console.log('sending.', this.state.name, this.state.email, this.state.message)
+        e.preventDefault()
+        let contactData = {
+            name: this.state.name,
+            email: this.state.email,
+            message: this.state.message
+        }
+        return fetch(baseURL, {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+            "Content-Type": "application/json; charset=utf-8",
+        },
+            body: JSON.stringify(contactData)
+        }).then(res => {window.location.reload()})
     }
     render() {
 
