@@ -70,7 +70,9 @@ class Main extends React.Component {
                         <a target='_blank' rel='noopener noreferrer' href='https://github.com/jstricklin/menudrawer-front-end'>
                             <h3>Menu Drawer - Galvanize Capstone Project</h3>
                             <div className='cardBody'>
+                                <div>
                                 <img src={menuScreen} height='350' alt="menu-buddy" />
+                            </div>
                                 <div className='card-text'>
                                     <p>Menu Drawer is a restaurant and menu centric, open source platform that will allow users to access a database of menus added by registered users or restaurants in order to view and compare menu items and prices, in order to find local options and choose a best option.</p>
                                     <p>This prototype app was built as a final Capstone project for the Web Development Immersive program at Galvanize.</p>
@@ -99,7 +101,7 @@ class Main extends React.Component {
 
                 <article id="resume" className={`${this.props.article === 'resume' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
                     <h2 className="major">Resume</h2>
-                    <embed src="https://drive.google.com/file/d/1cwJPjGZmoVe0c5Qu2137rDRzJztr8RtJ/preview" width='100%' height='700px' />
+                    <embed src="https://drive.google.com/file/d/1cwJPjGZmoVe0c5Qu2137rDRzJztr8RtJ/preview" className="resume" width='100%' height='700px' />
                     {close}
                 </article>
 
