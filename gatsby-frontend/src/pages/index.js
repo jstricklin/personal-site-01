@@ -19,6 +19,8 @@ class IndexPage extends React.Component {
         this.handleCloseArticle = this.handleCloseArticle.bind(this)
         this.setWrapperRef = this.setWrapperRef.bind(this);
         this.handleClickOutside = this.handleClickOutside.bind(this);
+        this.handleLoading = this.handleLoading.bind(this)
+        this.handleThanks = this.handleThanks.bind(this)
     }
 
     componentDidMount () {
@@ -37,6 +39,29 @@ class IndexPage extends React.Component {
 
     setWrapperRef(node) {
         this.wrapperRef = node;
+    }
+
+    handleLoading() {
+        this.setState({
+            isArticleVisible: !this.state.isArticleVisible,
+            article: 'loading'
+        })
+    }
+    handleThanks() {
+        this.setState({
+            article: 'thanks'
+        })
+        setTimeout(() => {
+            this.setState({
+                timeout: !this.state.timeout
+            })
+        }, 2475)
+
+        setTimeout(() => {
+            this.setState({
+                articleTimeout: !this.state.articleTimeout
+            })
+        }, 2500)
     }
 
     handleOpenArticle(article) {
@@ -96,8 +121,10 @@ class IndexPage extends React.Component {
                     <div id="wrapper">
                         <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
                         <Main
-                            onCloseArticle={this.handleCloseArticle}
+                            onThanks={this.handleThanks}
                             onOpenArticle={this.handleOpenArticle}
+                            onCloseArticle={this.handleCloseArticle}
+                            onLoading={this.handleLoading}
                             isArticleVisible={this.state.isArticleVisible}
                             timeout={this.state.timeout}
                             articleTimeout={this.state.articleTimeout}

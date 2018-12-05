@@ -35,7 +35,7 @@ class Main extends React.Component {
     }
     sendMessage(e) {
         e.preventDefault()
-        this.props.onOpenArticle('loading')
+        this.props.onLoading()
         let contactData = {
             name: this.state.name,
             email: this.state.email,
@@ -48,7 +48,7 @@ class Main extends React.Component {
             "Content-Type": "application/json; charset=utf-8",
         },
             body: JSON.stringify(contactData)
-        }).then(res => {window.location.reload()})
+        }).then(res => {this.props.onThanks()})
     }
     render() {
 
@@ -63,6 +63,11 @@ class Main extends React.Component {
                         <img src={loading} alt='Loading...' />
                     </div>
                     {close}
+                </article>
+                <article id='thanks' className={`${this.props.article === 'thanks' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display: 'none'}}>
+                    <div>
+                        <p>Your message has been sent! Check your inbox for confirmation.</p>
+                    </div>
                 </article>
                 <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
                     <h2 className="major">About Me</h2>
