@@ -65,7 +65,7 @@ class Main extends React.Component {
                     {close}
                 </article>
                 <article id='thanks' className={`${this.props.article === 'thanks' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display: 'none'}}>
-                    <div>
+                    <div style={{textAlign:'center'}}>
                         <p>Your message has been sent! Check your inbox for confirmation.</p>
                     </div>
                 </article>
