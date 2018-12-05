@@ -100,7 +100,7 @@ class Main extends React.Component {
                         <a target='_blank' rel='noopener noreferrer' href='https://github.com/Blackoxy/MovieBuddyFE'>
                             <h3>Movie Buddy - Galvanize Group Project</h3>
                             <div className='cardBody wide'>
-                                <img src={movieScreen} height='250' alt="menu-buddy" />
+                                <img src={movieScreen} width='90%' alt="menu-buddy" />
                                 <div className="card-text">
                                     <p>Movie Buddy matches users with others to watch upcoming films in order to meet new people and help engage or even create a local film community.</p>
                                     <p>This project was built as a sprint-style, group project for the Web Dev Immersive Program at Galvanize and was built utilizing a mix of technologies, including NodeJS/Express, PostgreSQL, and React.</p>

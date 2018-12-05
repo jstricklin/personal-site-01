@@ -55,13 +55,13 @@ class IndexPage extends React.Component {
             this.setState({
                 timeout: !this.state.timeout
             })
-        }, 2475)
+        }, 2975)
 
         setTimeout(() => {
             this.setState({
                 articleTimeout: !this.state.articleTimeout
             })
-        }, 2500)
+        }, 3000)
     }
 
     handleOpenArticle(article) {
