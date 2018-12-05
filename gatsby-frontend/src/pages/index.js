@@ -43,7 +43,6 @@ class IndexPage extends React.Component {
 
     handleLoading() {
         this.setState({
-            isArticleVisible: !this.state.isArticleVisible,
             article: 'loading'
         })
     }
@@ -59,7 +58,8 @@ class IndexPage extends React.Component {
 
         setTimeout(() => {
             this.setState({
-                articleTimeout: !this.state.articleTimeout
+                articleTimeout: !this.state.articleTimeout,
+                isArticleVisible: !this.state.isArticleVisible,
             })
         }, 3000)
     }

@@ -35,6 +35,7 @@ class Main extends React.Component {
     }
     sendMessage(e) {
         e.preventDefault()
+        e.target.reset()
         this.props.onLoading()
         let contactData = {
             name: this.state.name,
@@ -49,6 +50,11 @@ class Main extends React.Component {
         },
             body: JSON.stringify(contactData)
         }).then(res => {this.props.onThanks()})
+        this.setState({
+            name: '',
+            email: '',
+            message: ''
+        })
     }
     render() {
 
