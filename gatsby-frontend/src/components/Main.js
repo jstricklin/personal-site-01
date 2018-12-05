@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import pic01 from '../images/pic01(edit).jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import loading from '../images/loading.svg'
 import menuScreen from '../images/menu-drawer-screen.png'
 import movieScreen from '../images/movie-buddy-screen.png'
 
@@ -24,6 +25,7 @@ class Main extends React.Component {
     }
     onNameChange(e){
         this.setState({ name: e.target.value })
+        console.log('article func', this.props.onOpenArticle)
     }
     onEmailChange(e){
         this.setState({ email: e.target.value })
@@ -33,6 +35,7 @@ class Main extends React.Component {
     }
     sendMessage(e) {
         e.preventDefault()
+        this.props.onOpenArticle('loading')
         let contactData = {
             name: this.state.name,
             email: this.state.email,
@@ -54,6 +57,13 @@ class Main extends React.Component {
         return (
             <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
+                {/* loading bar below */}
+                <article id='loading' className={`${this.props.article === 'loading' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display: 'none'}}>
+                    <div style={{ display: 'flex', justifyContent:'center' }}>
+                        <img src={loading} alt='Loading...' />
+                    </div>
+                    {close}
+                </article>
                 <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
                     <h2 className="major">About Me</h2>
                     <span className="image main"><img src={pic01} alt="" /></span>
